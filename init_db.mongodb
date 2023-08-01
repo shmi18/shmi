@@ -1,0 +1,12 @@
+// TODO: If you need to initialize your database with some documents, uncomment/adjust these lines and add insert statements.
+
+db = connect("mokshlakshmi[dot]com");
+db.dropDatabase();
+db.createCollection("messages");
+db.messages.insertOne({
+  name: "Mokshlakshmi",
+  email: "mokslakshmi@gmail.com",
+  timestamp: "1686645093647",
+  message: "Please read New Delhi love songs!",
+});
+

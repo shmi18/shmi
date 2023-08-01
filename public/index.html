@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Shmi Bhan</title>
+
+  <!-- Open Graph / Facebook  -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shmi Bhan" />
+  <meta property="og:description" content="Stanford" />
+  <!-- Twitter  -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Shmi Bhan" />
+  <meta property="twitter:description" content="Stanford" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cambay:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- This line provides automatic page and style reloading when files change -->
+  <!-- <script type="module" src="/lib/client/updater.js"></script> -->
+  <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+  <main>
+    
+    <div class="flex-container">            
+      <header class="heading-container fade-in">
+        <nav>
+          <button class="nav-button"><img src="/images/home.svg" /></button>
+          <button class="nav-button"><img src="/images/contact.svg" /></button>
+        </nav>
+        <hr />
+        <h1 class="heading heading-roman">Mokshlakshmi.</h1>
+        <h1 class="heading heading-devnagari">मोक्षलक्ष्मी.</h1>
+        <div class="icons-container">
+          <a target="_blank" href="mailto:mokshlakshmi@gmail.com"><img src="/images/mail.svg" alt="Mail" /></a>
+          <a target="_blank" href="https://twitter.com/shmi_b"><img src="/images/twitter.svg" alt="Twitter" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/mokshlakshmibhan/"><img src="/images/linkedin.svg"
+              alt="LinkedIn" /></a>
+        </div>
+      </header>
+      <section class="page page-visible">
+        <div class="description-container">
+          <div class="fade-in description">
+            <p>I also go by Shmi.</p>
+            <p>
+              Engineering — finance — product management — design <br />
+              (reading about architecture and photography)
+            </p>
+          </div>
+          <div class="fade-in company-wrapper">
+            <div class="company-details">
+              <p class="company-title">
+                Uber
+                <br />
+                <span class="company-year">2022</span>
+              </p>
+              <p class="job-title">Product Manager Intern</p>
+            </div>
+          </div>
+          <div class="fade-in company-wrapper">
+            <div class="company-details">
+              <p class="company-title">
+                Atome
+                <br />
+                <span class="company-year">2022</span>
+              </p>
+              <p class="job-title">Product Manager Intern</p>
+            </div>
+          </div>
+          <div class="fade-in company-wrapper">
+            <div class="company-details">
+              <p class="company-title">
+                JPMorgan Chase
+                <br />
+                <span class="company-year">2020-21</span>
+              </p>
+              <p class="job-title">Financial Analyst</p>
+            </div>
+          </div>
+          <div class="lotus fade-in"></div>
+        </div>
+      </section>
+      <section class="page">
+        <form name="message" class="message fade-in">
+          <fieldset class="form-control">
+            <label for="name">Name</label>
+            <input name="name" type="text" />
+          </fieldset>
+
+          <fieldset class="form-control">
+            <label for="email">Email</label>
+            <input name="email" type="email" />
+          </fieldset>
+
+          <fieldset class="form-control">
+            <label for="message">Which book should I read next?</label>
+            <textarea name="message" rows="3"></textarea>
+          </fieldset>
+
+          <fieldset class="form-submit">
+            <label for="submit">Submit, or just browse the results:</label>
+            <button name="submit" class="submit" type="submit"></button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="messages" class="page">
+        <div class="message-list fade-in">                  
+          <fieldset class="form-submit">
+            <label for="submit">Back to the form:</label>
+            <button class="back" type="submit"></button>
+          </fieldset>
+        </div>
+      </section>      
+      <button class="light-switch fade-in"></button>      
+      <aside id="loading-overlay" class="fade-in hidden">
+        <div class="loading-circle"></div>
+      </aside>
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>
